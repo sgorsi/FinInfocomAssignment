@@ -1,9 +1,8 @@
-package com.example.fininfocomassignment
+package com.example.fininfocomassignment.activity
 
 import android.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.fininfocomassignment.databinding.ActivityMainBinding

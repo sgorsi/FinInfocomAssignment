@@ -1,4 +1,4 @@
-package com.example.fininfocomassignment
+package com.example.fininfocomassignment.activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -38,7 +38,7 @@ class LoginActivity : AppCompatActivity() {
 
             tvCreateNewAcc.setOnClickListener {
 
-                startActivity(Intent(this@LoginActivity,SignupActivity::class.java))
+                startActivity(Intent(this@LoginActivity, SignupActivity::class.java))
             }
 
         }
@@ -58,7 +58,7 @@ class LoginActivity : AppCompatActivity() {
 
                     showToast(loginResult.successMessage.toString())
 
-                    startActivity(Intent(this@LoginActivity,MainActivity::class.java))
+                    startActivity(Intent(this@LoginActivity, MainActivity::class.java))
                     finish()
                 }
                 is ResponseData.ErrorMessage ->

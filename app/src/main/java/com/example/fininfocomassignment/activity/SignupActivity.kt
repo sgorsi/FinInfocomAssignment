@@ -1,4 +1,4 @@
-package com.example.fininfocomassignment
+package com.example.fininfocomassignment.activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -38,7 +38,7 @@ class SignupActivity : AppCompatActivity() {
                 {
                     showToast(signupResponse.successMessage.toString())
 
-                    startActivity(Intent(this@SignupActivity,LoginActivity::class.java))
+                    startActivity(Intent(this@SignupActivity, LoginActivity::class.java))
                     finish()
                 }
                 is ResponseData.ErrorMessage ->
