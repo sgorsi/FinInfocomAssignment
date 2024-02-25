@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/welcome_back"
+            android:fontFamily="@font/roboto_bold"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_18ssp" />
+
+
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="@dimen/_3sdp"
+            android:layout_marginTop="@dimen/_32sdp">
+
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center"
+       android:padding="@dimen/_16sdp"
+       android:layout_marginStart="@dimen/_10sdp"
+       android:layout_marginEnd="@dimen/_10sdp"
+       android:orientation="vertical">
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:text="@string/login_to_continue"
+           android:textColor="@color/black"
+           android:textSize="@dimen/_16ssp" />
+
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48sp"
+            android:fontFamily="@font/roboto"
+            android:background="@drawable/input_bg"
+            android:padding="@dimen/_10sdp"
+            android:hint="@string/enter_username"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:inputType="textEmailAddress"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12ssp"
+            android:autofillHints="" />
+
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp"
+            android:minHeight="48sp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:fontFamily="@font/roboto"
+            android:hint="@string/enter_your_password"
+            android:inputType="textPassword"
+            android:background="@drawable/input_bg"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12ssp"
+            android:autofillHints="" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/log_in"
+            android:layout_marginTop="@dimen/_24sdp"
+            android:textAllCaps="false"
+            android:background="@drawable/btn_bg"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp"
+            android:fontFamily="@font/roboto_medium"/>
+
+        <ProgressBar
+            android:id="@+id/progress_circular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminate="true"
+            android:progressTint="@color/black"
+            android:layout_marginTop="@dimen/_24sdp"
+            android:visibility="gone"/>
+
+       <TextView
+           android:id="@+id/tv_createNewAcc"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:layout_marginTop="@dimen/_16sdp"
+           android:text="Create New Account"
+           android:textColor="@color/black"
+           android:textSize="@dimen/_14ssp" />
+
+
+</LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
